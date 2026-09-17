@@ -1,0 +1,33 @@
+:root { --ink: #1c2924; --muted: #617067; --paper: #f5f1ea; --soft: #e7eee6; --accent: #d65a3a; }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; }
+.navbar { background: rgba(245,241,234,.9); backdrop-filter: blur(12px); border-bottom: 1px solid #d8e0d8; }
+.navbar-item, .navbar-link, .brand { color: var(--ink); }
+.brand { font-weight: 700; letter-spacing: -.04em; font-size: 1.25rem; }
+.brand span, .eyebrow, .project-number, .contact-link { color: var(--accent); }
+.hero-section { min-height: 80vh; padding: 9rem 1.5rem 5rem; display: flex; align-items: center; }
+.eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.title { color: var(--ink); letter-spacing: -.04em; }
+.hero-title { font-size: clamp(3rem, 8vw, 6.5rem); line-height: .95; max-width: 780px; }
+.hero-copy, p { color: var(--muted); line-height: 1.7; }
+.is-accent { background: var(--accent); color: white; border-color: var(--accent); }
+.is-accent:hover { color: white; background: #b9472d; }
+.profile-mark { aspect-ratio: 1; max-width: 280px; margin: auto; border-radius: 50%; background: var(--soft); display: grid; place-content: center; text-align: center; border: 1px solid #cad8ca; }
+.profile-mark span { font: 700 5rem Georgia, serif; letter-spacing: -.1em; }
+.profile-mark small { color: var(--muted); line-height: 1.5; }
+.section-soft { background: var(--soft); }
+.skills { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.5rem; }
+.skills span, .tag { border: 1px solid #b9c9ba; border-radius: 999px; padding: .45rem .8rem; color: var(--muted); font-size: .8rem; }
+.project-card { min-height: 240px; border-top: 1px solid #bbcabe; padding-top: 1.4rem; }
+.project-card h3 { margin-top: 2rem; }
+.tag { display: inline-block; border: 0; background: var(--soft); }
+.contact-section { background: #1c2924; }
+.contact-section .title { color: #f5f1ea; }
+.contact-section p { color: #b9c9ba; }
+.contact-section a { color: #f5f1ea; }
+.contact-link { font: 700 clamp(1.1rem, 3vw, 1.8rem) Georgia, serif; text-decoration: none; }
+.footer { background: var(--paper); color: var(--muted); padding: 1.5rem; }
+body.dark-mode { --paper: #17211e; --ink: #f1eee7; --muted: #b8c4bc; --soft: #22312b; }
+body.dark-mode .navbar { background: rgba(23,33,30,.9); border-color: #3d5146; }
+body.dark-mode .navbar-burger span { background-color: var(--ink); }
+body.dark-mode .contact-section { background: #0d1412; }
